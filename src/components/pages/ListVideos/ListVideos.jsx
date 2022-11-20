@@ -39,6 +39,9 @@ const ListVideos = () => {
 
   return (
     <div>
+      <h1>Video Catalog</h1>
+      <hr />
+    <div>
       <Row className=''>
         <Col xs lg='2'>
           <Pagination handlePageChange={handlePageChange} />
@@ -51,6 +54,7 @@ const ListVideos = () => {
         </Col>
       </Row>
       <VideoCatTable column={columnNames} data={videoList} />
+    </div>    
     </div>
   );
 };
